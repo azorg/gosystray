@@ -61,7 +61,8 @@ prepare: #checkroot
 	@echo ">>> install dependencies to build"
 	@#apt install -y make
 	@#apt install -y golang
-	@go install fyne.io/fyne/v2/cmd/fyne@latest
+	@sudo apt-get install gcc libgtk-3-dev libayatana-appindicator3-dev
+	@#go install fyne.io/fyne/v2/cmd/fyne@latest
 
 clean:
 	rm -f $(PRJ)
